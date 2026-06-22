@@ -20,9 +20,8 @@ const data = {
     {title: 'LLMs and the End of Programming', url: 'https://lnkd.in/e3JbSFi7', notes: 'Why prompting is the new coding.'}
   ],
   readAnthropic: [
-    {title: 'Anthropic Skills Learning Guide', url: 'https://www.anthropic.com/skills', notes: 'Structured learning paths for AI safety, systems, and product design.'},
-    {title: 'Anthropic model use principles', url: 'https://www.anthropic.com/', notes: 'Best practices for building safe AI products.'},
-    {title: 'Prompting fundamentals', url: '', notes: 'Tactics for prompt engineering and reliable model behavior.'}
+    {title: 'Anthropic Learn', url: 'https://www.anthropic.com/learn?utm_source=chatgpt.com', notes: ''},
+    {title: 'Claude Code in Action', url: 'https://anthropic.skilljar.com/claude-code-in-action', notes: ''}
   ],
   recordings: [],
   demos: [],
