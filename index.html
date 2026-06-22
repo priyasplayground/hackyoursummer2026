@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>HackYourSummer — Bootcamp Materials</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>HackYourSummer — Bootcamp Materials</h1>
+      <nav class="top-nav">
+        <a href="#read">Things to Read</a>
+        <a href="#recordings">Speaker Recordings</a>
+        <a href="#demos">Demos</a>
+        <a href="#ideas">Ideas</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="add-item">
+        <h2>Add an item</h2>
+        <form id="addForm">
+          <label>Section
+            <select id="sectionSelect">
+              <option value="read">Things to Read</option>
+              <option value="recordings">Speaker Recordings</option>
+              <option value="demos">Demos</option>
+              <option value="ideas">Ideas</option>
+            </select>
+          </label>
+          <label>Title
+            <input id="itemTitle" required placeholder="Title or link label">
+          </label>
+          <label>URL (optional)
+            <input id="itemUrl" placeholder="https://...">
+          </label>
+          <label>Notes (optional)
+            <input id="itemNotes" placeholder="Short note">
+          </label>
+          <button type="submit">Add</button>
+        </form>
+      </section>
+
+      <section id="read" class="section">
+        <h2>Things to Read</h2>
+        <ul id="readList" class="item-list"></ul>
+      </section>
+
+      <section id="recordings" class="section">
+        <h2>Speaker Recordings</h2>
+        <ul id="recordingsList" class="item-list"></ul>
+      </section>
+
+      <section id="demos" class="section">
+        <h2>Demos</h2>
+        <ul id="demosList" class="item-list"></ul>
+      </section>
+
+      <section id="ideas" class="section">
+        <h2>Ideas</h2>
+        <ul id="ideasList" class="item-list"></ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">Local edits are saved to your browser. Use the form above to add items.</footer>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
