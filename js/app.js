@@ -1,8 +1,11 @@
 const data = {
   readStanford: [
-    {title: 'CS 106A: Programming Methodology', url: 'https://cs106a.stanford.edu/', notes: 'Foundational programming concepts with Python and JavaScript.'},
-    {title: 'CS 107: Programming Paradigms', url: 'https://cs107.stanford.edu/', notes: 'Systems programming, C/C++, and performance-aware design.'},
-    {title: 'CS 193P: iOS Development', url: 'https://cs193p.sites.stanford.edu/', notes: 'Mobile app development with modern UI patterns.'}
+    {title: 'CS230: Deep Learning | Autumn 2025', url: 'https://lnkd.in/dQ-DHdsJ', notes: ''},
+    {title: 'CS329H: Machine Learning from Human Preferences', url: 'https://lnkd.in/d_6GzDAr', notes: ''},
+    {title: 'CS25: Transformers', url: 'https://lnkd.in/dbMtpim5', notes: ''},
+    {title: 'CS231N: Deep Learning for Computer Vision | 2025', url: 'https://lnkd.in/djXeGyse', notes: ''},
+    {title: 'CME295: LLM Evaluation | Autumn 2025', url: 'https://lnkd.in/dTPTwh_M', notes: ''},
+    {title: 'CS336: Language Modeling from Scratch | 2025', url: 'https://lnkd.in/dthjnD7E', notes: ''}
   ],
   readHarvard: [
     {title: 'CS50: Introduction to Computer Science', url: 'https://cs50.harvard.edu/x/2026/', notes: 'Core algorithms, web development, and full-stack fundamentals.'},
