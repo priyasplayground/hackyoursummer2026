@@ -42,10 +42,24 @@ button,input,select{font:inherit}
 .item-list{list-style:none;padding:0;margin:0}
 .empty-state{margin-top:14px;color:rgba(226,232,240,.9);font-size:1rem;line-height:1.8}
 .read-group-grid{display:grid;grid-template-columns:1fr;gap:20px}
-.read-group{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.1);border-radius:22px;padding:24px}
-.read-group h3{margin-top:0;margin-bottom:14px;font-size:1.05rem;color:#c4b5fd}
-.item{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:18px 22px;margin-top:14px;box-shadow:0 12px 28px rgba(15,23,42,.12)}
+.read-group{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:22px;padding:24px;position:relative;overflow:hidden}
+.read-group::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 0%,rgba(255,255,255,.06) 65%,rgba(255,255,255,.1)100%);pointer-events:none}
+.read-group h3{margin-top:0;margin-bottom:14px;font-size:1.05rem}
+.read-group:nth-child(1){border-color:rgba(167,139,250,.2);background:linear-gradient(180deg,rgba(167,139,250,.16),rgba(255,255,255,.05));}
+.read-group:nth-child(1) h3{color:#a78bfa}
+.read-group:nth-child(1) .item{border-color:rgba(167,139,250,.18)}
+.read-group:nth-child(1) .item::before{background:#a78bfa}
+.read-group:nth-child(2){border-color:rgba(56,189,248,.2);background:linear-gradient(180deg,rgba(56,189,248,.14),rgba(255,255,255,.05));}
+.read-group:nth-child(2) h3{color:#38bdf8}
+.read-group:nth-child(2) .item{border-color:rgba(56,189,248,.18)}
+.read-group:nth-child(2) .item::before{background:#38bdf8}
+.read-group:nth-child(3){border-color:rgba(251,113,133,.2);background:linear-gradient(180deg,rgba(251,113,133,.14),rgba(255,255,255,.05));}
+.read-group:nth-child(3) h3{color:#fb7185}
+.read-group:nth-child(3) .item{border-color:rgba(251,113,133,.18)}
+.read-group:nth-child(3) .item::before{background:#fb7185}
+.item{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:18px 22px;margin-top:14px;box-shadow:0 12px 28px rgba(15,23,42,.12);position:relative;padding-left:20px}
 .item:first-child{margin-top:0}
+.item::before{content:'';position:absolute;left:0;top:18px;bottom:18px;width:4px;border-radius:999px;background:var(--accent)}
 .item a, .item span{font-weight:700;color:#eef2ff;display:block}
 .item a:hover{color:var(--accent)}
 .meta{color:rgba(226,232,240,.75);font-size:.94rem;margin-top:8px;line-height:1.75}
