@@ -18,33 +18,23 @@
     </header>
 
     <main class="container">
-      <section class="add-item">
-        <h2>Add an item</h2>
-        <form id="addForm">
-          <label>Section
-            <select id="sectionSelect">
-              <option value="read">Things to Read</option>
-              <option value="recordings">Speaker Recordings</option>
-              <option value="demos">Demos</option>
-              <option value="ideas">Ideas</option>
-            </select>
-          </label>
-          <label>Title
-            <input id="itemTitle" required placeholder="Title or link label">
-          </label>
-          <label>URL (optional)
-            <input id="itemUrl" placeholder="https://...">
-          </label>
-          <label>Notes (optional)
-            <input id="itemNotes" placeholder="Short note">
-          </label>
-          <button type="submit">Add</button>
-        </form>
-      </section>
-
       <section id="read" class="section">
         <h2>Things to Read</h2>
-        <ul id="readList" class="item-list"></ul>
+
+        <div class="read-group">
+          <h3>Stanford Course References</h3>
+          <ul id="readStanfordList" class="item-list"></ul>
+        </div>
+
+        <div class="read-group">
+          <h3>Harvard Course References</h3>
+          <ul id="readHarvardList" class="item-list"></ul>
+        </div>
+
+        <div class="read-group">
+          <h3>Anthropic Skills Learning</h3>
+          <ul id="readAnthropicList" class="item-list"></ul>
+        </div>
       </section>
 
       <section id="recordings" class="section">
@@ -63,7 +53,7 @@
       </section>
     </main>
 
-    <footer class="site-footer">Local edits are saved to your browser. Use the form above to add items.</footer>
+    <footer class="site-footer">Browse the curated bootcamp materials in the sections above.</footer>
 
     <script src="js/app.js"></script>
   </body>

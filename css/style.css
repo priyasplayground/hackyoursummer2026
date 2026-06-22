@@ -20,6 +20,7 @@ button{background:var(--accent);color:#fff;padding:8px 12px;border:none;border-r
 .item{display:flex;justify-content:space-between;align-items:center;padding:8px 10px;border-radius:6px}
 .item + .item{border-top:1px solid #f0f2f5}
 .meta{color:var(--muted);font-size:13px}
-.actions button{background:transparent;border:0;color:#c33;cursor:pointer}
 .site-footer{text-align:center;padding:18px;color:var(--muted);font-size:13px}
-@media(min-width:720px){.top-nav{display:inline-block;float:right}.add-item{display:flex;gap:12px;align-items:center}.add-item form{display:flex;gap:8px;width:100%;align-items:center}.add-item label{margin:0}.add-item input{width:auto}.add-item select{width:220px}}
+.read-group{margin-top:18px}
+.read-group h3{margin-bottom:10px;font-size:15px;color:var(--accent)}
+@media(min-width:720px){.top-nav{display:inline-block;float:right}}
