@@ -1,28 +1,22 @@
 const data = {
   readStanford: [
-    {title: 'CS 106A: Programming Methodology', url: 'https://cs50.harvard.edu/x/2026/', notes: 'Introductory programming course with Python and C'},
-    {title: 'CS 107: Programming Paradigms', url: 'https://cs107.stanford.edu/', notes: 'Systems programming and C++ fundamentals'}
+    {title: 'CS 106A: Programming Methodology', url: 'https://cs106a.stanford.edu/', notes: 'Foundational programming concepts with Python and JavaScript.'},
+    {title: 'CS 107: Programming Paradigms', url: 'https://cs107.stanford.edu/', notes: 'Systems programming, C/C++, and performance-aware design.'},
+    {title: 'CS 193P: iOS Development', url: 'https://cs193p.sites.stanford.edu/', notes: 'Mobile app development with modern UI patterns.'}
   ],
   readHarvard: [
-    {title: 'CS50: Introduction to Computer Science', url: 'https://cs50.harvard.edu/x/2026/', notes: 'Foundational course covering algorithms, data structures, and web development'},
-    {title: 'CS164: Software Engineering', url: 'https://cs164.cs.harvard.edu/', notes: 'Project-based software engineering practices'}
+    {title: 'CS50: Introduction to Computer Science', url: 'https://cs50.harvard.edu/x/2026/', notes: 'Core algorithms, web development, and full-stack fundamentals.'},
+    {title: 'CS50W: Web Programming with Python and JavaScript', url: 'https://cs50.harvard.edu/web/2026/', notes: 'Practical web app development with Flask, React, and APIs.'},
+    {title: 'CS164: Software Engineering', url: 'https://cs164.cs.harvard.edu/', notes: 'Team workflows, architecture, and product delivery.'}
   ],
   readAnthropic: [
-    {title: 'Anthropic Skills Learning Guide', url: 'https://www.anthropic.com/skills', notes: 'Resources and learning frameworks from Anthropic'},
-    {title: 'AI safety and collaboration resources', url: 'https://www.anthropic.com/', notes: 'Frameworks for responsible AI development'}
+    {title: 'Anthropic Skills Learning Guide', url: 'https://www.anthropic.com/skills', notes: 'Structured learning paths for AI safety, systems, and product design.'},
+    {title: 'Anthropic model use principles', url: 'https://www.anthropic.com/', notes: 'Best practices for building safe AI products.'},
+    {title: 'Prompting fundamentals', url: '', notes: 'Tactics for prompt engineering and reliable model behavior.'}
   ],
-  recordings: [
-    {title: 'Opening keynote — 2026', url: '', notes: 'Zoom recording (add link)'},
-    {title: 'Guest speaker session', url: '', notes: 'Add recording link once available'}
-  ],
-  demos: [
-    {title: 'Project A demo', url: '', notes: 'Slides + code in README'},
-    {title: 'Interactive UI walkthrough', url: '', notes: 'Live demo planned for the final day'}
-  ],
-  ideas: [
-    {title: 'Smart recycling bin', url: '', notes: 'Team brainstorm idea'},
-    {title: 'Community health tracker', url: '', notes: 'Project idea to visualize local wellness'}
-  ]
+  recordings: [],
+  demos: [],
+  ideas: []
 }
 
 function render() {
@@ -47,6 +41,7 @@ function renderList(elId, items) {
     if (it.url) {
       title.href = it.url
       title.target = '_blank'
+      title.rel = 'noopener noreferrer'
     }
     title.textContent = it.title
     content.appendChild(title)
